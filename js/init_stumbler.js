@@ -5,8 +5,6 @@ const CORPUS = 'abcdefghijklmnoqrstuvwxyz'.split('')
 
 
 
-
-
 // training
 
 const train_model = ( args ) => {
@@ -21,7 +19,7 @@ const train_model = ( args ) => {
 	let max_runs = 100 * 1000
 	let c = 0
 	while( c < max_runs ){
-		const weights = random_weights()
+		const weights = random_weights( CORPUS )
 		const guess = generate_guess( weights )
 		if( distance_from( guess, target ) < loss ){
 			WEIGHTS.push( weights )
@@ -33,22 +31,31 @@ const train_model = ( args ) => {
 
 }
 
-
 const generate_guess = ( weights ) => {
-	for( const letter of CORPUS ){
-		/*
+	/*
 
 
 
-				THE HARD PART
+			HARD PART 1
 
 
 
-		*/
-	}
+	*/
 }
 
+const random_weights = ( corpus_array ) => {
+	/*
 
+
+
+
+			HARD PART 2
+
+
+
+
+	*/
+}
 
 
 
